@@ -7,7 +7,7 @@ namespace StackAndQueuePractices
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the DataStructures Stack and Queue Practices");
-            Console.WriteLine("1.Create a stack\n2.Peek() And Pop() Methods\n3.Enqueue Operation");
+            Console.WriteLine("1.Create a stack\n2.Peek() And Pop() Methods\n3.Enqueue Operation\n4.Dequeue Operation");
             Console.WriteLine("Choose above option");
             int option = Convert.ToInt32(Console.ReadLine());  
             StackOperation operation = new StackOperation();
@@ -32,6 +32,13 @@ namespace StackAndQueuePractices
                     queueOperation.Enqueue(70);
                     queueOperation.Enqueue(30);
                     queueOperation.Enqueue(56);
+                    queueOperation.Display();
+                    break;
+                case 4:
+                    queueOperation.Enqueue(70);
+                    queueOperation.Enqueue(30);
+                    queueOperation.Enqueue(56);
+                    queueOperation.Dequeue();
                     queueOperation.Display();
                     break;
             }

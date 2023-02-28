@@ -30,6 +30,21 @@ namespace StackAndQueuePractices
             }
             Console.WriteLine("{0} node added to the queue",data);
         }
+        public void Dequeue()
+        {
+            if (this.Front == null)
+            {
+                Console.WriteLine("Queue is empty");
+                return;
+            }
+            Node temp = this.Front;
+            this.Front = this.Front.next;
+            if(this.Front== null)
+            {
+                this.Rear = null;
+            }
+            Console.WriteLine("{0} node is removed from Queue",temp.data);
+        }
         public void Display()
         {
             Node temp = this.Rear;
