@@ -11,7 +11,7 @@ namespace StackAndQueuePractices
         public int data;
         public Node next;
 
-        public Node(int data) 
+        public Node(int data)  //Created a constructor
         {
             this.data = data;
             this.next = null;
